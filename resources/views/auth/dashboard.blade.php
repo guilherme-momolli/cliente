@@ -1,3 +1,7 @@
+@extends('layouts.app')
+
+@section(section: 'content')
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -21,3 +25,5 @@
     </div>
 </body>
 </html>
+@endsection
+

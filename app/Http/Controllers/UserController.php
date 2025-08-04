@@ -10,19 +10,17 @@ class UserController extends Controller
 {
     public function showRegistrationForm()
     {
-        return view('auth.register'); // sua view de cadastro
+        return view('auth.register');
     }
 
     public function register(Request $request)
     {
-        // validação
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:users',
             'password' => 'required|string|min:6|confirmed',
         ]);
 
-        // cria usuário
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,

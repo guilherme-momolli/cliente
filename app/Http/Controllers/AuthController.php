@@ -10,7 +10,6 @@ use Illuminate\Validation\ValidationException;
 
 class AuthController extends Controller
 {
-    // Mostrar form de login
     public function showLogin()
     {
         return view('auth.login');

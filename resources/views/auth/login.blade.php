@@ -1,3 +1,7 @@
+@extends('layouts.app')
+
+@section(section: 'content')
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,3 +34,4 @@
     <p>Não tem conta? <a href="{{ route('register') }}">Cadastrar</a></p>
 </body>
 </html>
+@endsection
